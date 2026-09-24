@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>wrench.repair</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #c258ff, #1babff);
+    }
+
+    .topbar .logo img {
+      display: block;
+      height: 40px;
+      width: auto;
+    }
+
+    .login {
+      padding: 8px 20px;
+      border: 2px solid #fff;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .login:hover {
+      background: #fff;
+      color: #7a2fb0;
+    }
+
+    .login:focus-visible,
+    .logo:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="/">
+      <img src="assets/logo-transparent.png" alt="wrench.repair">
+    </a>
+    <a class="login" href="login.html">Log In</a>
+  </header>
+</body>
+</html>
