@@ -1,0 +1,10 @@
+Explain the difference between git restore, git reset --soft, git reset --hard, and git revert in your own words.
+
+
+Git Restore, designed for individual files in your working directory, discards uncommitted changes in your working directory, essentially going ‘back in time’ to your most recent commit, without making changes to your commit history. For example, if you were to break a file and wanted to restore to your past commit, you would run git restore. You should take care using this, though, because you may lose unsaved work. 
+
+Git Reset --soft, a project level command, moves your project’s history head back to a previous commit, leaving staged and working files untouched in the process. For example, if you make a commit but realize you’d like to add more to it, git reset --soft undoes the commit itself, but keeps modified code safe in your staging area, ready to be committed again.
+
+Git Reset --hard, another project level command, is a destructive command that moves your project’s history back to a previous commit, completely deleting any uncommitted changes, staged files, and recent commits since that point. If you’ve ran into a complete mess and have no choice but to completely reset, this is what you would use.
+
+Git revert is somewhat similar to git restore, but rather than moving backward to restore a previous setting, revert only moves forward. Essentially, git revert creates a new commit that does the exact opposite of a previous commit. Instead of rewriting or deleting any history, revert safely rolls back changes by applying an inverse patch.This is especially useful in a shared branch, where you would use git revert to avoid breaking things for other collaborators with git restore.
