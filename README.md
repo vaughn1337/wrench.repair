@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-transparent-gradient.png" alt="wrench.repair logo" width="500">
+  <img src="public/assets/logo-transparent-gradient.png" alt="wrench.repair logo" width="500">
 </p>
 
 <p align="center">
